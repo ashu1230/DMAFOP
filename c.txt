@@ -1,0 +1,107 @@
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y install unzip wget
+wget "https://r4---sn-5pop-qxal.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.19/android-studio-2022.3.1.19-linux.tar.gz?cms_redirect=yes&mh=69&mip=103.68.23.91&mm=28&mn=sn-5pop-qxal&ms=nvh&mt=1694675789&mv=m&mvi=4&pl=24&rmhost=r1---sn-5pop-qxal.gvt1.com&shardbypass=sd"
+
+sudo tar -xvf "/workspaces/DigitalMenu/android/android-studio-2022.3.1.19-linux.tar.gz?cms_redirect=yes&mh=69&mip=103.68.23.91&mm=28&mn=sn-5pop-qxal&ms=nvh&mt=1694675789&mv=m&mvi=4&pl=24&rmhost=r1---sn-5pop-qxal.gvt1.com&shardbypass=sd"
+
+sudo mv android-studio ~/android-studio
+
+
+nano ~/.bashrc
+
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+source ~/.bashrc
+
+sudo apt install openjdk-11-jdk
+
+
+
+./gradlew assembleDebug
+
+
+
+[
+    {
+        "orderAmount": 359,
+        "gstAmount": 0,
+        "deliveryAmount": 0,
+        "discountAmount": 0,
+        "cookingInstruction": "",
+        "orderSummary": [
+            {
+                "dishChoicesSelected": [],
+                "extraSelected": [
+                    {
+                        "elementId": "654648097fe0a384cc2fb6ab",
+                        "addOnsSelected": [
+                            {
+                                "addOnName": "small",
+                                "addOnPrice": 30,
+                                "category": "veg"
+                            },
+                            {
+                                "addOnName": "medium",
+                                "addOnPrice": 60,
+                                "category": "veg"
+                            }
+                        ],
+                        "addOnDisplayName": "extra cheese"
+                    },
+                    {
+                        "elementId": "654650d97fe0a384cc2fd1f9",
+                        "addOnsSelected": [
+                            {
+                                "addOnName": "Small",
+                                "addOnPrice": 30,
+                                "category": "veg"
+                            },
+                            {
+                                "addOnName": "Medium",
+                                "addOnPrice": 60,
+                                "category": "veg"
+                            }
+                        ],
+                        "addOnDisplayName": "cheese burst"
+                    },
+                    {
+                        "elementId": "654651197fe0a384cc2fd265",
+                        "addOnsSelected": [
+                            {
+                                "addOnName": "Small",
+                                "addOnPrice": 20,
+                                "category": "veg"
+                            },
+                            {
+                                "addOnName": "Medium",
+                                "addOnPrice": 40,
+                                "category": "veg"
+                            },
+                            {
+                                "addOnName": "Large",
+                                "addOnPrice": 50,
+                                "category": "veg"
+                            }
+                        ],
+                        "addOnDisplayName": "extra toppings"
+                    }
+                ],
+                "itemSizeSelected": null,
+                "dishQuantity": 1,
+                "priceOneItem": 359,
+                "totalPrice": 359,
+                "dishType": "veg",
+                "dishName": "Onion",
+                "dishId": "65798e148d584c8e8e77b8f7",
+                "dishPrice": 69
+            }
+        ],
+        "_id": "65bf61112169ee4d3cc2dffb",
+        "orderPlaceDateAndTime": "2024-02-04T10:04:01.540Z"
+    }
+]
+
