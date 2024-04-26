@@ -1,4 +1,3 @@
-# DigitalMenu
 
 ## Description
 
@@ -15,7 +14,7 @@ or paste the following command in your terminal
 ```bash
 
 git clone
-cd DigitalMenu
+cd path
 npm install
 ng serve
 
@@ -23,10 +22,6 @@ ng serve
 
 
 ## firebase setup
-
-<!-- [5:31 PM, 12/11/2023] Himanshu Sharma Depaak Ka Bhai: npm run dev
-[5:31 PM, 12/11/2023] Himanshu Sharma Depaak Ka Bhai: firebase use staging
-[5:31 PM, 12/11/2023] Himanshu Sharma Depaak Ka Bhai: firebase deploy -->
 
 1. create a firebase project
 2. enable firestore and storage
